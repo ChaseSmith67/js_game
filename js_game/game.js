@@ -74,10 +74,17 @@ var Game = function(){
         });
     };
 
-    
+    // Spawn enemy
+    function spawnEnemy(){
+        var enemy = new Enemy();
+        assets.push(enemy);
+    }
+
+
     // Startup the game
     function init(){
         setupEvents();
+        spawnEnemy();
     }
 
 
